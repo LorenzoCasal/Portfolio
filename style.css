@@ -94,7 +94,7 @@ ul {
 
 li {
     display: inline;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 8px;
     border-radius: 12px;
     transition: all 200ms ease;
@@ -244,6 +244,19 @@ aside {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    animation: glowPulse 4s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 10px rgba(129, 6, 206, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(129, 6, 206, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(129, 6, 206, 0.4);
+  }
 }
 
 .tech-cards:nth-child(4) {
