@@ -171,12 +171,16 @@ main img {
 .project-info article {
     background-color: #201f1f;
     border-radius: 20px;
-    padding: 5px;
+    padding: 5px 10px 5px 5px;
     margin-bottom: 5px;
     display: inline-flex;
     align-items: center;
     justify-items: center;
     font-size: 1rem;
+}
+
+.project-info article:hover {
+    filter: brightness(1.3);
 }
 
 .project-info svg {
